@@ -63,4 +63,4 @@ box = {
   "material" : "cardboard",
   "0" : "meow", //works like box[0]
   "^&*" : "testng 123"
-}
+};

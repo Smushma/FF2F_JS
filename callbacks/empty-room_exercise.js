@@ -52,12 +52,12 @@ const newDevelopment = [
 const notInRoom = (suspect, accumulator) => {
     const emptyRooms = reduce(suspect.rooms, (room, accumulator) => {
         if (room === false) 
-            accumulator.push(room)
-        return accumulator
-    }, [])
+            accumulator.push(room);
+        return accumulator;
+    }, []);
 
-    return emptyRooms
-}
+    return emptyRooms;
+};
 
-notInRooms = _.map(newDevelopment, notInRoom)
-_.intersectio(...notInRooms)
+notInRooms = _.map(newDevelopment, notInRoom);
+_.intersectio(...notInRooms);

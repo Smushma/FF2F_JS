@@ -73,8 +73,8 @@ const videoData = [
     }
 ];
 
-var findSuspects = videoData.filter(presentSuspect => presentSuspect.present)
+var findSuspects = videoData.filter(presentSuspect => presentSuspect.present);
 
-var suspectNames = findSuspects.map(suspectName => suspectName.name)
+var suspectNames = findSuspects.map(suspectName => suspectName.name);
 
-console.log(suspectNames)
+console.log(suspectNames);

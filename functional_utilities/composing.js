@@ -1,11 +1,11 @@
 const consider = (name) => {
-    return `I think it could be... ${name}`
+    return `I think it could be... ${name}`;
 }
 
 const exclaim = (statement) => {
-    return `${statement.toUpperCase()}!`
+    return `${statement.toUpperCase()}!`;
 }
 
-const blame = _.compose(consider, exclaim)
+const blame = _.compose(consider, exclaim);
 
-blame(you) // => 'I think iy could be... YOU!'
+blame(you); // => 'I think iy could be... YOU!'

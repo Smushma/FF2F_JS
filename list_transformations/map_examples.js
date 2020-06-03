@@ -2,7 +2,7 @@
     List transformations
     _.map() / .map()
 
-    _.map([1,2,3], function(v,i,list){console.log(v)})
+    _.map([1,2,3], function(v,i,list){console.log(v)});
 
     Produces a new array of values by mapping each value in list
     through a transforamtion function (iterator)
@@ -21,11 +21,11 @@ const makeBroken = function(item) {
 const _ = {};
 
 _.map = function(list, callback) {
-    var storage = []
+    var storage = [];
 
     _.each(list, function(v, i, list) {
-        storage.push(callback(v, i, list))
-    })
+        storage.push(callback(v, i, list));
+    });
 
-    return storage
-}
+    return storage;
+};

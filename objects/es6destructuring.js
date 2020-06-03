@@ -112,7 +112,7 @@ console.log(x, b) // => Hello
 // Using as method parameters
 var foo = function({prop: x}) {
     console.log(x);
-}
+};
 
 foo({invalid: 1}); // => undefined
 foo({prop: 1}); // => 1

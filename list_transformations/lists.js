@@ -9,11 +9,11 @@ game['suspects'] = {};
 game.suspects.push({
     name: "Rusty",
     color: "orange"
-})
+});
 /////////////
 const game = {
     'suspects': {}
-}
+};
 
 const game = {
     'suspects': [
@@ -24,8 +24,8 @@ const game = {
             name: "Miss Scarlet",
             color: "red"
         }
-    ]
-}
+    ];
+};
 
 /*
     For loops
@@ -54,7 +54,7 @@ function CreateSuspectObjects(name) {
       color: name.split(' ')[1],
       speak() {log("my name is $(name)");}
     };
-  };
+  }
   
   var suspects = ["Miss Scarlet", "Colonel Mustard", "Mr.White"];
   
@@ -69,7 +69,7 @@ function CreateSuspectObjects(name) {
   // );
   
   suspects.forEach(function(name) {
-    suspectsList.push(CreateSuspectObjects(name))
+    suspectsList.push(CreateSuspectObjects(name));
     }
   );
   
@@ -95,16 +95,16 @@ _.each = function(list, callback) {
     }
     else { // Object
         for (var key in list) {
-            callback(list[key], key, list)
+            callback(list[key], key, list);
         }
     }
-}
+};
 
 _.each(['sally', 'george', 'progie'], function(name, i, list) {
     if (list[i + 1]) {
-        console.log(name, 'is younger than', list[i + 1])
+        console.log(name, 'is younger than', list[i + 1]);
     }
     else {
-        console.log(name, 'is the oldest')
+        console.log(name, 'is the oldest');
     }
-})
+});
